@@ -17,6 +17,7 @@
                 color: white; 
                 padding-left: 172px;
                 padding-top: 45px;
+                overflow-x:hidden;
             }
 
             ::-webkit-scrollbar {
@@ -82,21 +83,34 @@
 
 }
 @media(max-width:850px) and (min-width:699px){
-    .Side-Bar{
-    }
     .Inner-Section{
         padding-left: 5px !important;
     }
 }
-@media(max-width:700px){
+/* @media(max-width:700px){
 
+} */
+
+@media(max-width:400px){
+    .My-Info{
+    width: 379px !important;
 }
-
+}
+@media(max-width:376px){
+    .My-Info{
+    width: 365px !important;
+}}
+@media(max-width:360px){
+    .My-Info{
+    width: 35`5px !important;
+}
+}
 @media(max-width:700px){
 .SpaceX-Link{
     display: block;
     line-height: 40px;
 }
+
 .Mobile-Post{
     opacity: 1 !important;
                 visibility:visible !important;
@@ -126,6 +140,11 @@
 .Following-Section{
 width: 30% !important;
 }
+.Username,.Username-2,.Username-3,.Username-4{
+                &::after{
+                background-image:url('') !important;
+                }
+            }
 .Content{
     margin-left: -128px;
     width: 103vw;
@@ -162,6 +181,9 @@ margin-top: 90px;
             .War-ROom-Footer{
                 column-gap: 20px !important;
             }
+            .Header{
+                margin-left: -83px !important;
+            }
 
             }
 
@@ -176,7 +198,7 @@ margin-top: 90px;
                     visibility: hidden;
                 }
                 .Inner-Section{
-                    width: 593px !important;
+                    width: 598px !important;
                 }
                 body{
                     overflow-x: hidden;
@@ -203,7 +225,15 @@ margin-top: 90px;
                     margin-left: -99px !important;
                 }
                 .Outer-Section{
-                padding-right: 50px;
+                padding-left: 15px;
+                margin-left: -100px !important;
+            }
+            .Adjust-Header-Search{
+                left: 1000px !important;
+            }
+            .Search-Head{
+                width: 80% !important;
+                margin-left: 80px !important;
             }
             .Recommendations-Sidebar{
                     left: 690px  !important;
@@ -270,6 +300,9 @@ margin-top: 90px;
             .Footer-Recom{
                 top: 470px !important;
                 padding-bottom: 20px;
+            }
+            .Outer-Section{
+                margin-left: -20px;
             }
           }
           @media(min-width:1400px ){
@@ -1520,8 +1553,8 @@ margin-top: 90px;
         </div>
         <nav class="Header">
             <div class="Inner-Section">
-           <div class="For-Your-Hover"><p class="For-you-Header">For you</p></div> 
-            <div class="Following-Section"><p class="Following-Header">Following</p></div>
+           <div class="For-Your-Hover"><a href="https://twitter.com/home"><p class="For-you-Header">For you</p></a> </div> 
+            <div class="Following-Section"><a href="https://twitter.com/home"><p class="Following-Header">Following</p></a></div>
             <a href="https://twitter.com/home/pinned/edit"><span class="Settings-Tool-Tip" data-tool-tip="Timeline Settings"> <img src="Header-Icons/Settings-Header.png" alt="Settings" class="Settings-Head"></span></a>
             </div>
             <div class="Outer-Section">
@@ -1643,7 +1676,7 @@ margin-top: 90px;
                 <span class="Acces Deco">© 2024 X Corp.</span>
             </footer>
         </div>
-        <a href=""> <div class="New-Stuff">
+        <a href="https://twitter.com/home"> <div class="New-Stuff">
           <p class="Show-35">Show 35 posts</p> 
         </div></a>
         <!-- Elon-Start
@@ -1878,6 +1911,6 @@ margin-top: 90px;
         <a href="https://twitter.com/notifications"> <span class="One Notifications-Sidebar" data-tool-tip="Notifications"><img src="SideBar-Icons/Notifiaction-Icon-Sidebar.png" alt="Sorry,Babu" class="Adjust-SVG Mobile-Ad"> </span></a>
         <a href="https://twitter.com/messages"><span class="One Messages" data-tool-tip="Messages"><img src="SideBar-Icons/Mail-Sidebar.png" alt="Sorry,Babu" class="Adjust-SVG Mobile-Ad"></span></a>
     </nav> 
-    <span ><img src="SideBar-Icons/Post-Sidebar.png" alt="Sorry,Babu" class="Adjust-SVG POST-Sidebar Mobile-Post">
+   <a href="https://twitter.com/compose/post"><img src="SideBar-Icons/Post-Sidebar.png" alt="Sorry,Babu" class="Adjust-SVG POST-Sidebar Mobile-Post"></a> 
     </body>
 </html>
